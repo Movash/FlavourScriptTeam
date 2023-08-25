@@ -1,0 +1,17 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+@import './reset.css';
+@import './common.css';
+@import './header.css';
+@import './hero.css';
+@import './categories.css';
+@import './popular-recipes.css';
+@import './filter.css';
+@import './recipes-cards.css';
+@import './pagination.css';
+@import './order-pop-up.css';
+@import './rating-pop-up.css';
+@import './recipe-pop-up.css';
+@import './favorites-page.css';
+@import './scroll-up.css';
+@import './loader.css';
+@import './footer.css';
