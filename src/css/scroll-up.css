@@ -1,0 +1,62 @@
+.btn-up {
+    position: fixed;
+    background-color: var(--accent-color);
+    right: 50px;
+    bottom: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.15s ease-in-out, transform 0.3s ease-in-out;
+    color: var(--btn-text-color);
+    width: 120px;
+    height: 120px;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .btn-up_hide {
+    display: none;
+  }
+
+  .btn-up_hiding {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  .btn-up-icon {
+    width: 50%;
+    height: 50%;
+    fill: currentcolor;
+  }
+
+@media screen and (min-width: 375px) {
+  .btn-up {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .btn-up {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .btn-up {
+    width: 90px;
+    height: 90px;
+  }
+}
+
+
+  @media (hover: hover) and (pointer: fine) {
+    .btn-up:hover {
+      transition: 0.5s ease-in-out;
+      background-color: var(--green-color);
+    }
+  }
