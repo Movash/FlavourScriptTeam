@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=Inter:wght@400;500;600&family=Poppins:wght@600&display=swap');
+
+:root {
+  --light-color: #fff;
+  --dark-color: #050505;
+  --accent-color: #9bb537;
+  --stars-color: #eea10c;
+  --btn-text-color: #f8f8f8;
+
+  --light-theme-text-color: #050505;
+  /* transparent 50% */
+  --light-theme-semi-transparent-color: #05050580;
+  /* transparent 30% */
+  --light-theme-almost-transparent-color: #0505054d;
+  /* transparent 20% */
+  --light-theme-transparent-color: #05050533;
+  --light-theme-slider-semi-transparent-color: #f8f8f880;
+
+  --dark-theme-background-color: #1e1e1e;
+  --dark-theme-text-color: #fff;
+  /* transparent 50% */
+  --dark-theme-semi-transparent-color: #ffffff80;
+  /* transparent 30% */
+  --dark-theme-almost-transparent-color: #ffffff4d;
+  /* transparent 20% */
+  --dark-theme-transparent: #ffffff33;
+
+  --animation: 250ms cubic-bezier(0.23, 0.86, 0.79, 0.77);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.is-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.rad-img {
+  overflow: hidden;
+  border-radius: 15px;
+}
+.section {
+  padding: 0 15px;
+}
+
+.container {
+  margin: 0 auto;
+
+  outline: 2px solid blue;
+}
+
+@media screen and (min-width: 375px) {
+  .section {
+    padding: 0 20px;
+  }
+  .container {
+    max-width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 0 32px;
+  }
+  .container {
+    max-width: 768px;
+  }
+
+  .sections-flex {
+    display: flex;
+    gap: 32px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 0 100px;
+  }
+  .container {
+    max-width: 1080px;
+  }
+
+  .sections-flex {
+    gap: 63px;
+  }
+}
+
+.base-btn {
+  padding: 14px 28px;
+  color: var(--btn-text-color);
+  background-color: var(--accent-color);
+  border: 1px var(--accent-color) solid;
+  border-radius: 15px;
+  transition: color var(--animation);
+}
+
+.base-btn:hover,
+.base-btn:focus {
+  color: var(--dark-color);
+}
+
+.error-el > p {
+  text-align: center;
+}

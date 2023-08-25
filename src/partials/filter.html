@@ -1,0 +1,39 @@
+<section class="filter">
+  <form class="filter-form">
+    <div class="filter-flex-wrapper">
+      <label class="filter-field">
+        <span class="filter-name">Search</span>
+        <span class="filter-input-wrapper">
+          <input 
+          class="search-input"
+          type="text"
+          autocomplete="off"
+          placeholder="Enter Text"
+          pattern="[a-zA-Z]"
+          />
+          <svg class="filter-input-icon" width="18" height="18">
+            <use href="./images/filter.svg#search"></use>
+          </svg>
+        </span>
+      </label>
+      <label class="filter-field">
+        <span class="filter-name">Time</span>
+        <select class="time-select" placeholder="Enter Text"></select>
+      </label>
+      <label class="filter-field">
+        <span class="filter-name">Area</span>
+        <select class="area-select"></select>
+      </label>
+      <label class="filter-field">
+        <span class="filter-name">Ingredients</span>
+        <select class="ingredients-select"></select>
+      </label>
+    </div>
+    <button type="button" class="filter-reset">
+      <svg class="filter-reset-icon">
+        <use href="./images/filter.svg#icon-x"></use>
+      </svg>
+      <p class="filter-reset-desc">Reset the filter</p>
+    </button>
+  </form>
+</section>

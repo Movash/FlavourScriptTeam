@@ -1,0 +1,56 @@
+<header class="container header-container">
+  <!-- <h2>Header section</h2> -->
+   <nav class="header-navigation">
+    <ul class="header-list">
+      <li class="header-item">
+        <a href="/src/index.html" class="header-link">Home</a>
+      </li>
+      <li class="header-item">
+        <a href="/src/favorites.html" class="header-link">Favorites</a>
+      </li>
+    </ul>
+    <a href="/src/index.html" class="header-logo"
+      >tasty
+      <span class="part-logo">treats.</span>
+    </a>
+  </nav>
+  <div class="header-buttons">
+    <button class="header-basket">
+      <svg class="header-icon-basket" width="24 " height="24">
+        <use href="./images/icons.svg#icon-shopping-cart"></use>
+      </svg>
+    </button>
+    <label class="switch">
+      <input type="checkbox" />
+      <span class="slider round"></span>
+    </label>
+    <button class="header-burger" data-menu-open>
+      <svg class="header-icon-burger" width="32 " height="32">
+        <use href="./images/icons.svg#iconb"></use>
+      </svg>
+    </button>
+  </div>
+</header>
+<!------------------------- Menu for mobile version -------------->
+<div class="menu is-hidden" data-menu>
+  
+    <button class="menu-close" data-menu-close type="button">
+      <svg class="icon-mnu" width="32 " height="32">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <nav class="menu-block">
+      <ul class="menu-list">
+      <li class="menu-item">
+        <a class="menu-link" href="/src/index.html" >Home</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-link" href="/src/favorites.html" >Favorites</a>
+      </li>
+    </nav>
+    <label class="menu-switch">
+      <input type="checkbox" />
+      <span class="menu-slider menu-round"></span>
+    </label>
+  
+</div>

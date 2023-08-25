@@ -1,0 +1,35 @@
+<div class="backdrop is-hidden">
+  <div class="modal-order">
+    <button class="order-btn-close" type="button">x</button>
+    <p class="order-title">Order now</p>
+    <form class="form-oder">
+      <label class="order-form-label">
+        <span class="order-form-span">Name</span>
+        <input
+          class="order-form-input"
+          type="text"
+          name="name"
+          pattern="[A-z]{1,15}"
+        />
+      </label>
+      <label class="order-form-label">
+        <span class="order-form-span">Phone number</span>
+        <input
+          class="order-form-input"
+          type="text"
+          name="phone"
+          pattern="[0-9]{10}"
+        />
+      </label>
+      <label class="order-form-label">
+        <span class="order-form-span">Email</span>
+        <input class="order-form-input" type="email" name="email" />
+      </label>
+      <label class="order-form-label">
+        <span class="order-form-span">Comment</span>
+        <textarea class="order-form-textarea" name="comment"></textarea>
+      </label>
+      <button class="order-submit base-btn" type="submit">Send</button>
+    </form>
+  </div>
+</div>
