@@ -1,0 +1,59 @@
+<section>
+  <header class="container header-container">
+    <!-- <h2>Header section</h2> -->
+   <nav class="header-navigation">
+      <ul class="header-list">
+        <li class="header-item">
+          <a href="/src/index.html" class="header-link-home">Home</a>
+        </li>
+        <li class="header-item">
+          <a href="/src/favorites.html" class="header-link-fav">Favorites</a>
+        </li>
+      </ul>
+    </nav>
+    <a href="/src/index.html" class="header-logo"
+      >tasty
+      <span class="part-logo">treats.</span>
+    </a>
+    <div class="header-buttons">
+      <button class="header-basket">
+        <svg class="header-icon-basket" width="24 " height="24" alt="order">
+          <use href="./images/icons-svg.svg#icon-basket"></use>
+        </svg>
+      </button>
+      <label class="switch">
+        <input class="switch-theme js-switch" type="checkbox" />
+        <span class="slider round"></span>
+      </label>
+      <button class="header-burger" data-menu-open>
+        <svg class="header-icon-burger" width="32 " height="32" alt="mobile-menu">
+          <use href="./images/icons-svg.svg#icon-lines"></use>
+        </svg>
+      </button>
+  </div>
+</header>
+</section>
+<!------------------------- Menu for mobile version -------------->
+  <div class="menu is-hidden" data-menu>
+  <div class="menu-content">
+    <button class="menu-close" data-menu-close type="button">
+      <svg class="icon-menu" width="32 " height="32" alt="close">
+        <use href="./images/icons-svg.svg#icon-close"></use>
+      </svg>
+    </button>
+    <nav class="menu-block">
+      <ul class="menu-list">
+      <li class="menu-item">
+        <a class="menu-link-home" href="/src/index.html" >Home</a>
+      </li>
+      <li class="menu-item">
+        <a class="menu-link-fav" href="/src/favorites.html" >Favorites</a>
+      </li>
+    </nav>
+    <label class="menu-switch">
+      <input class="js-switch" type="checkbox" />
+      <span class="menu-slider menu-round"></span>
+    </label>
+  </div>
+  </div>
+
