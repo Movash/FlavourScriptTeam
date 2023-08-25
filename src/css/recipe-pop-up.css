@@ -1,0 +1,213 @@
+.backdrop{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: var(--light-theme-almost-transparent-color);
+    overflow-y: auto;
+}
+
+.modal-recipe{
+    width: 90%;
+    height: auto;
+    padding: 40px 20px;
+    flex-direction: column;
+    align-items: center;
+    background: var(--light-color);
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%) rotate(0);
+}
+
+.recipe-modal-btn-wrap{
+    display: flex;
+    gap: 14px;
+}
+
+.btn-favourite{
+    padding: 12px 24px;
+    font-size: 13px;
+}
+
+.btn-give-rating{
+    background-color: transparent;
+    border: 1px solid var(--accent-color);
+    color: var(--dark-color);
+    padding: 12px 24px; 
+    font-size: 13px;
+}
+
+.btn-give-rating:hover,
+.btn-give-rating:focus{
+    background-color: var(--accent-color);
+    color: var(--btn-text-color);
+}
+
+.btn-recipe-close{
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center; 
+    align-items: end; 
+    background: transparent;
+    border: none;
+    font-size: 18px; 
+}
+
+.btn-recipe-close:hover,
+.btn-recipe-close:focus{
+    border: 1px solid var(--accent-color);
+    border-radius: 50%;
+}
+
+.recipe-modal-title{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--dark-color);
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.rating-time-wrap{
+    display: flex;
+    align-items: start;
+    margin-top: 14px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--light-theme-semi-transparent-color);
+    margin-bottom: 33px;
+}
+
+.recipe-modal-rating{
+    margin-right: 10px;
+}
+
+.recipe-modal-stars{
+    margin-right: 17px;
+}
+
+.modal-ingredients-list-wrap{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.recipe-modal-name-item{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--dark-color);
+    margin-bottom: 14px;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.recipe-modal-name-item:last-child,
+.recipe-modal-measure-item:last-child{
+    margin-bottom: 40px;
+}
+
+.recipe-modal-measure-item{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: var(--light-theme-semi-transparent-color);
+    margin-bottom: 14px;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.modal-tags-list{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 24px;
+}
+
+.recipe-modal-teg-span{
+    border: 1px solid var(--light-theme-transparent-color);
+    border-radius: 35px;
+    padding: 8px 16px;
+}
+
+.recipe-modal-instructions-paragraph{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:  #050505CC;;
+}
+
+.recipe-modal-instructions-wrap{
+    margin-bottom: 40px;
+}
+
+.recipe-modal-measure-item::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -100%;
+    width: 200%;
+    border-bottom: 1px solid #0505051A;
+    height:  1px;
+    color: #0505051A;
+
+} 
+
+.recipe-modal-name-item::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #0505051A;
+    /* height:  2px;
+    color: #0505051A; */
+}
+
+@media screen and (min-width: 375px){
+    .btn-favourite{
+        font-size: 14px;
+    }
+
+    .btn-give-rating{
+        font-size: 14px;
+    }
+
+    .modal-recipe{
+        width: 335px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .modal-recipe{
+        width: 531px;
+        padding: 32px;
+    }
+
+    .recipe-modal-img{
+        width: 467px;
+        height: 250px;
+    }
+
+    .recipe-modal-video{
+        width: 467px;
+        height: 250px;
+    }
+
+}

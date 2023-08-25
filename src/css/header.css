@@ -1,0 +1,339 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    padding-bottom: 85px;
+}
+
+.header-list {
+    display: none;
+}
+
+.header-logo {
+    margin-top: 30px;
+    margin-left: 20px;
+
+    color: var(--accent-color);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.125;
+    letter-spacing: -0.64px;
+}
+
+.part-logo {
+    color: var(--dark-color);
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12;
+    margin-right: 20px;
+}
+
+.header-basket {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--light-color);
+    border: none;
+}
+
+.header-switch {
+    display: none;
+}
+
+.header-burger {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--light-color);
+    border: none;
+}
+
+.switch {
+    display: none;
+}
+
+/* ------------------------MOBILE MENU--------------start------ */
+.menu {
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 49;
+    background-color: transparent;
+    transition: opacity var(--animation), visibility var(--animation), left var(--animation);
+}
+
+.menu-content {
+    width: 50vw;
+    height: 100vh;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 50;
+    background-color: var(--accent-color);
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: opacity var(--animation), visibility var(--animation), left var(--animation);
+}
+
+.menu.is-hidden {
+    left: -100%;
+}
+
+.menu.is-hidden .menu-content {
+    left: -100%;
+}
+
+.menu-close {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--accent-color);
+    border: none;
+    margin-left: auto;
+
+}
+
+.menu-block {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon-mnu {
+    fill: var(--light-color);
+}
+
+.menu-item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.menu-link {
+    display: block;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    text-align: center;
+}
+
+/* Switcher menu */
+.menu-switch {
+    position: relative;
+    display: inline-block;
+    width: 46px;
+    height: 21px;
+}
+
+/* Hide default HTML checkbox */
+.menu-switch input {
+    display: none;
+}
+
+/* The slider */
+.menu-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(206, 205, 205, 1);
+    -webkit-transition: .4s;
+    transition: .4s;
+
+}
+
+.menu-slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 2px;
+    background-color: var(--light-color);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.menu-slider {
+    background-color: var(--accent-color);
+}
+
+input:focus+.menu-slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.menu-slider:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+}
+
+/* Rounded sliders */
+.menu-slider.menu-round {
+    border-radius: 20px;
+}
+
+.menu-slider.menu-round:before {
+    border-radius: 60%;
+}
+
+/* ------------------------MOBILE MENU--------------end------ */
+@media screen and (min-width: 768px) {
+    .header-list {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        margin-left: 30px;
+
+
+    }
+
+    .header-item {
+        color: var(--dark-color);
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .header-navigation {
+        display: flex;
+    }
+
+    .header-logo {
+        margin-top: auto;
+        padding-left: 200px;
+        font-size: 18px;
+        line-height: 1.111;
+        letter-spacing: -0.72px;
+    }
+
+    .header-burger {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    /* ------------------------------------------------SWITCHER-----------------start----- */
+    /* The switch - the box around the slider */
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 46px;
+        height: 21px;
+    }
+
+    /* Hide default HTML checkbox */
+    .switch input {
+        display: none;
+    }
+
+    /* The slider */
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(206, 205, 205, 1);
+        -webkit-transition: .4s;
+        transition: .4s;
+
+    }
+
+    .slider:before {
+        position: absolute;
+        content: "";
+        height: 18px;
+        width: 18px;
+        left: 4px;
+        bottom: 2px;
+        background-color: var(--light-color);
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+
+    input:checked+.slider {
+        background-color: var(--accent-color);
+    }
+
+    input:focus+.slider {
+        box-shadow: 0 0 1px #2196F3;
+    }
+
+    input:checked+.slider:before {
+        -webkit-transform: translateX(18px);
+        -ms-transform: translateX(18px);
+        transform: translateX(18px);
+    }
+
+    /* Rounded sliders */
+    .slider.round {
+        border-radius: 20px;
+    }
+
+    .slider.round:before {
+        border-radius: 60%;
+    }
+
+    /* ------------------------------------------------SWITCHER-----------------end----- */
+
+    .header-buttons {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .header-buttons {
+        margin-right: 100px;
+    }
+
+    .header-navigation {
+        margin-left: 100px;
+    }
+
+    .header-list {
+        margin-left: 0;
+    }
+
+    .header-container {
+        padding-bottom: 100px;
+    }
+}
+
+/* ----------------------------Change color theme-------------- */

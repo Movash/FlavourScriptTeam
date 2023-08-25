@@ -1,0 +1,399 @@
+
+.vrap-hero {
+  position: relative;
+  padding-top: 42px;
+  overflow: hidden;
+}
+
+.hero-name-btn-block {
+  padding-left: 20px;
+}
+
+.hero-name{
+  color: var(--dark-color);
+  font-family: Inter;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.tasty-green {
+  color: var(--accent-color);
+  font-family: Inter;
+  font-size: 26px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.hero-text {
+  margin-top: 14px;
+  color: var(--dark-color);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.28571;
+}
+
+.hero-btn {
+  display: inline-flex;
+  padding: 14px 28px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 12px;
+  border: 1px solid var(--accent-color);
+  margin-top: 28px;
+  margin-bottom: 48px;
+
+  color: var(--dark-color);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  display: inline-flex;
+  padding: 14px 28px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 15px;
+  background: var(--accent-color);
+
+  color: var(--btn-text-color);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal
+}
+
+.hero-slider {
+  padding-bottom: 40px;
+}
+
+.vrap-hero {
+  position: relative;
+}
+
+/* ==============   my-swiper-wrap   ======================= */
+
+
+.cook {
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid var(--accent-color);
+  height: 280px;
+  max-width: 80px;
+}
+
+.pic {
+  height: 175px;
+  max-width: 200px;
+}
+
+.zoom-dish {
+  border-radius: 12px;
+  border: 1px solid var(--dark-color);
+  height: 280px;
+  max-width: 197px;
+  object-fit: cover;
+  object-position: -6% 6px;
+  transform: scale(1.2);
+}
+
+.zoom-two {
+  object-fit: cover;
+  object-position: 15% -10px;
+  transform: scale(1.3);
+}
+
+
+
+
+.first-pic {
+  padding-right: 8px;
+}
+
+ .second-pic {
+  position: relative; 
+  display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 200px;
+   max-height: 302px;
+   background-color: var(--dark-color);
+
+   border-radius: 12px;
+   border: 1px solid var(--dark-color);
+   margin-right: 8px;
+
+  background: var(--accent-color);
+    background: radial-gradient(circle, var(--accent-color) -100%, var(--dark-color) 70%);
+ }
+
+  .third-pic {
+
+    display: flex;
+    width: 200px;
+    max-height: 302px;
+    background-color: var(--dark-color);
+    /* object-fit: cover; */
+    border-radius: 12px;
+    border: 1px solid var(--dark-color);
+    margin-right: 16px;
+    overflow: hidden;
+  }
+
+.cap {
+  margin-top: 40px;
+}
+
+.swiper {
+  position: absolute;
+  left: 20px;
+  overflow: hidden;
+  height: 322px;
+  width: 480px;
+}
+
+.my-swiper-wrap {
+  width: 100%;
+  position: relative;
+}
+
+.hero-slide-wrap {
+  display: flex;
+}
+
+.swiper-wrapper {
+  position: relative;
+}
+
+.dish-description{
+  width: 151px;
+  display: block;
+  position: absolute;
+  bottom: 24px;
+  color: #f8f8f899;
+  text-align: center;
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4;
+  /* 140% */
+  text-transform: uppercase;
+}
+
+.dish-area {
+  display: block;
+  position: absolute;
+  bottom: 14px;
+  color: #f8f8f833;
+  text-align: center;
+  font-family: Inter;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 375px) {
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .hero-name {
+        font-size: 36px;
+      }
+    .hero-name-btn-block {
+      padding-left: 30px;
+    }
+
+    .tasty-green {
+      font-size: 36px;
+    }
+    
+    .hero-text {
+     margin-top: 16px;
+     line-height: 1.5;
+     width: 408px;
+    
+    font-size: 16px;
+    line-height: 1.5;
+     }
+
+    .hero-btn {
+      margin-top: 32px;
+      margin-bottom: 64px;
+    }
+
+    
+
+    /* --------------------  Swiper   -------------------*/
+    .pic {
+      height: 271px;
+      max-width: 302px;
+    }
+
+    .swiper-wrapper {        
+      width: 650px;
+      height: 500px;
+    }
+
+    .cook {
+      object-fit: cover;
+      border-radius: 12px;
+      border: 1px solid var(--accent-color);
+      height: 442px;
+      max-width: 121px;
+    }
+
+    .zoom-dish {
+      
+      height: 378px;
+      max-width: 276px;
+    }
+
+    .zoom-two {
+      object-fit: cover;
+      object-position: 6% -6px;
+      transform: scale(1.6);
+    }
+
+  
+    .first-pic {
+      padding-right: 16px;
+    }
+  
+    .second-pic {
+      display: flex;
+      width: 351px;
+      max-height: 442px;
+      background-color: var(--dark-color);
+      /* object-fit: cover; */
+      border-radius: 12px;
+      border: 1px solid var(--dark-color);
+      margin-right: 16px;
+    }
+  
+    .third-pic {
+      display: flex;
+      width: 351px;
+      max-height: 442px;
+      background-color: var(--dark-color);
+      border-radius: 12px;
+      border: 1px solid var(--dark-color);
+      margin-right: 16px;
+      overflow: hidden;
+    }
+  
+    .hero-name {
+      width: 446px;
+    }
+  
+    .swiper {
+      width: 900px;
+      height: 484px;
+      
+    }
+
+    .my-swiper-wrap {
+      padding-left: 12px;
+    }
+    
+  .dish-description {
+    width: 276px;
+    bottom: 54px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    }
+
+  .dish-area {
+    display: block;
+    position: absolute;
+    bottom: 32px;
+    font-size: 12px;
+    line-height: 1.16;
+  }      
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1200px) {
+  .vrap-hero {
+    display: flex;
+  }
+
+  .first-pic {
+    padding-right: 16px;
+  }
+
+  .second-pic {
+    display: flex;
+    width: 351px;
+    max-height: 442px;
+    border-radius: 12px;
+    border: 1px solid var(--dark-color);
+    margin-right: 16px;
+  }
+
+  .third-pic {
+    display: flex;
+    width: 351px;
+    max-height: 442px;
+    background-color: var(--dark-color);
+    /* object-fit: cover; */
+    border-radius: 12px;
+    border: 1px solid var(--dark-color);
+    margin-right: 16px;
+    }
+
+  .hero-name-btn-block {
+    padding-left: 0px;
+  }
+
+.hero-name {
+  width: 446px;
+}
+
+.swiper {
+  height: 488px;
+  left: 0px;
+  } 
+
+
+}
+
