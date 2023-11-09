@@ -26,7 +26,7 @@ let categoryBtns = [];
 let totalPages;
 let currentPage;
 
-async function getCategories() {
+export async function getCategories() {
   try {
     const resp = await request.fetchAllCategories();
     if (categoriesListEl)
@@ -72,7 +72,7 @@ function createCategoriesMarkUp(arr) {
 
 categoriesBtnEl?.addEventListener('click', handlerAllCategoriesBtn);
 
-function handlerAllCategoriesBtn() {
+export function handlerAllCategoriesBtn() {
   makeBtnNotActive();
   categoriesBtnEl.classList.add('categories-btn-active');
   removeCategoriesFromLS();

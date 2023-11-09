@@ -5,7 +5,11 @@ import { Notify } from 'notiflix/build/notiflix-notify-aio';
 import '../css/filter.css';
 
 import { FetchInfo } from './fetch-requests.js';
-import { getRecipeByInfo, getAllRecipes } from './categories.js';
+import {
+  getRecipeByInfo,
+  getAllRecipes,
+  handlerAllCategoriesBtn,
+} from './categories.js';
 import {
   saveInLocalStorageFilters,
   getFiltersFromLS,
@@ -25,7 +29,7 @@ selectTime?.addEventListener('change', selectedTime);
 selectArea?.addEventListener('change', selectedArea);
 selectIngredients?.addEventListener('change', selectedIngredient);
 resetFilter?.addEventListener('click', () => {
-  resetAllFilters(), getAllRecipes();
+  handlerAllCategoriesBtn();
 });
 resetInput?.addEventListener('click', resetInputValue);
 inputSubmit?.addEventListener('keydown', removeEnter);
@@ -151,12 +155,12 @@ function selectedIngredient(evt) {
   updateFullFilter();
 }
 
-function scheduleUpdate() {
-  clearTimeout(timeoutId);
-  timeoutId = setTimeout(() => {
-    updateFullFilter();
-  }, 100);
-}
+// function scheduleUpdate() {
+//   clearTimeout(timeoutId);
+//   timeoutId = setTimeout(() => {
+//     updateFullFilter();
+//   }, 100);
+// }
 
 function resetInputValue() {
   inputSubmit.value = '';
@@ -175,7 +179,10 @@ function removeEnter(evt) {
   }
 }
 
-// setTimeout(() => {takeFromLocal()}, 2000);
+// Запит з локал сторейдж
+// Було 2000 затримка
+
+setTimeout(() => {takeFromLocal()}, 2000);
 
 function updateFullFilter() {
   fullFilter.title = searchText;
@@ -183,7 +190,9 @@ function updateFullFilter() {
   fullFilter.area = searchArea;
   fullFilter.ingredients = searchIngredient;
 
-  // saveInLocalStorageFilters(fullFilter);
+// Запис в локал сторейдж
+
+  saveInLocalStorageFilters(fullFilter);
 
   if (searchTime || searchArea || searchIngredient) {
     inputSubmit.classList.add('disabled');
